@@ -37,6 +37,14 @@ public class HelloPluginIT extends OpenSearchIntegTestCase {
         String body = EntityUtils.toString(response.getEntity(), StandardCharsets.UTF_8);
 
         logger.info("response body: {}", body);
-        assertThat(body, containsString("hello"));
+        assertTrue(body.contains("hello"));
+    }
+
+    public void testPluginGetHelloWorld() throws IOException, ParseException {
+        Response response = createRestClient().performRequest(new Request("GET", "/_plugins/hello-world-java"));
+        String body = EntityUtils.toString(response.getEntity(), StandardCharsets.UTF_8);
+
+        logger.info("response body: {}", body);
+        assertEquals(body, "Hello from Java! 👋\n");
     }
 }
