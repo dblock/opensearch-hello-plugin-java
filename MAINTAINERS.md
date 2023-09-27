@@ -6,7 +6,4 @@ This document contains a list of maintainers in this repo. See [opensearch-proje
 
 | Maintainer               | GitHub ID                                               | Affiliation |
 | ------------------------ | ------------------------------------------------------- | ----------- |
-| Amitai Stern             | [AmiStrn](https://github.com/AmiStrn)                   | Logz.io     |
 | Daniel "dB." Doubrovkine | [dblock](https://github.com/dblock)                     | Amazon      |
-| Sarat Vemulapalli        | [saratvemulapalli](https://github.com/saratvemulapalli) | Amazon      |
-| Andriy Redko             | [reta](https://github.com/reta)                         | Aiven       |
